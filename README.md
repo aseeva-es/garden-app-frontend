@@ -1,12 +1,28 @@
 # Garden App 
 
-Learn-IT training project. Frontend team creates UI with Next.js.
+It is a project part of the LearnIT Coding & Finnish language training programme. This is where frontend team creates UI with Next.js.
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Building and running the project
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). 
+### Prerequisites
+In order to be able to run and/or debug the project locally, you will have to install Node.js and Npm according to your operating system requirements:
+https://nodejs.org/en/download
 
-## Getting Started
-
-First, run the development server:
+### Installing
+Clone the project to your local machine by running the following command in the terminal:
+```bash
+git clone git@github.com:aseeva-es/garden-app-frontend.git
+```
+Clonning will automatically create the project directory for you, so go into it:
+```bash
+cd garden-app-frontend
+```
+Now let's install project dependencies with the command:
+```bash
+npm install
+```
+### Running
+From inside the project directory, run the development server:
 
 ```bash
 npm run dev
@@ -26,6 +42,8 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## Plain HTML/CSS/JS sandbox
+We have setup the [`sandbox directory`](/public/sandbox/) for you to try your basic HTML/CSS/JavaScript skills without interfering with the main project work. Feel free to modify and delete/create new files in the directory and see what happens 😃!
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
