@@ -43,7 +43,8 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ## Plain HTML/CSS/JS sandbox
-We have setup the [`sandbox directory`](/public/sandbox/) for you to try your basic HTML/CSS/JavaScript skills without interfering with the main project work. Feel free to modify and delete/create new files in the directory and see what happens 😃!
+We have setup the [`sandbox directory`](/public/sandbox/) for you to try your basic HTML/CSS/JavaScript skills without interfering with the main project work. Feel free to modify and delete/create new files in the directory and see what happens 😃! 
+After runnin the local server, open http://localhost:3000/sandbox/plain.html with your browser to see the result.
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
