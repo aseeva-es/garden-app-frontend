@@ -2,7 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 import pic from "/public/images/left-box.jpg";
 import Layout from "../../../components/layout";
-import { Button, Checkbox, Input, Card } from "react-daisyui";
 
 export default function Login() {
   return (
@@ -24,7 +23,7 @@ export default function Login() {
 
         <div className="relative flex items-center justify-center flex-1 p-4">
 
-              <Card className="px-10 py-20 shadow-xl min-w-[70%]">
+              <div className="card px-10 py-20 shadow-xl min-w-[70%]">
             <div className="form ">
             <p className="text-xl mb-6">
               Sign in to PlantApp
@@ -35,19 +34,19 @@ export default function Login() {
                 <label className="label">
                   <span className="label-text">E-mail address</span>
                 </label>
-                <Input />
+                <input />
               </div>
               <div className="form-control w-full">
                 <label className="label">
                   <span className="label-text">Password</span>
                 </label>
-                <Input type="password" />
+                <input type="password" />
               </div>
               <div className="form-control w-full items-end text-xs">
               <a className="link">Forgot your password?</a>
               </div>
               <div className="form-control w-full">
-                <Button className="bg-[#B58D63] text-white ">SIGN IN</Button> 
+                <button className="bg-[#B58D63] text-white ">SIGN IN</button> 
               </div>
               <div className="form-control w-full ">
                 <span className="flex flex-row justify-normal text-xs gap-2">
@@ -58,7 +57,7 @@ export default function Login() {
             </div>
     
   </div>
-            </Card>
+            </div>
         </div>
       </div>
     </Layout>
