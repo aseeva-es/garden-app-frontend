@@ -2,8 +2,14 @@ import Head from "next/head";
 import Form from "@/components/form/form";
 import LayoutLeftImage from "../../../components/layoutLeftImage";
 import Button from "@/components/button/button";
+import Checkbox from "@/components/form/checkbox/checkbox";
+
 
 export default function SignUp() {
+const title = 'Sign up for PlantApp';
+const linkText = 'Have you not an account';
+const linkTitle = 'Sign in';
+
   const doSubmit = (formValue) => {
     console.warn(formValue);
   };
@@ -16,7 +22,7 @@ export default function SignUp() {
 
       <div className="card px-10 py-20 shadow-xl min-w-[70%]">
         <div className="form ">
-          <p className="text-xl mb-6">Sign up for PlantApp</p>
+          <p className="text-xl mb-6">{title}</p>
           <div className="flex flex-col w-full component-preview items-center gap-4 font-roboto">
             <Form
               onSubmit={doSubmit}
@@ -44,9 +50,7 @@ export default function SignUp() {
                 },
               ]}
             >
-              <div className=" w-full items-end text-xs">
-                <a className="link">Forgot your password?</a>
-              </div>
+              <Checkbox />
               <div className=" w-full">
                 <Button >SIGN UP</Button>
               </div>
@@ -54,7 +58,7 @@ export default function SignUp() {
 
             <div className=" w-full ">
               <span className="flex flex-row justify-normal text-xs gap-2">
-                <p>Have you not an account</p> <a className="link">Sign up</a>
+                <p>{linkText}</p> <a className="link text-[#5850EC]">{linkTitle}</a>
               </span>
             </div>
           </div>

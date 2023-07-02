@@ -3,20 +3,30 @@ import Form from "@/components/form/form";
 import LayoutLeftImage from "../../../components/layoutLeftImage";
 import Button from "@/components/button/button";
 import Link from "next/link";
+import Image from "next/image";
+import logo from "/public/images/logo-box.png";
 
 export default function Login() {
   const doSubmit = (formValue) => {
     console.warn(formValue);
   };
-
+const title = 'Sign in to PlantApp'
   return (
     <LayoutLeftImage>
       <Head>
         <title>Login</title>
       </Head>
-      <div className="card px-10 py-20 shadow-xl min-w-[70%]">
+      <div className="card relative px-10 py-16 shadow-xl min-w-[70%]">
+      
+      <Image
+            src={logo}
+            alt="logo image"
+            priority
+            className="mb-14 mx-auto"
+            width={150}
+          />
         <div className="form ">
-          <p className="text-xl mb-6">Sign in to PlantApp</p>
+          <p className="text-xl mb-6">{title}</p>
           <div className="flex flex-col w-full component-preview items-center gap-4 font-roboto">
             <Form
               onSubmit={doSubmit}
@@ -38,16 +48,16 @@ export default function Login() {
               ]}
             >
               <div className="w-full items-end text-xs">
-                <a className="link">Forgot your password?</a>
+                <a className="link text-[#5850EC]">Forgot your password?</a>
               </div>
-              <div className="form-control w-full">
+              <div className="w-full">
                 <Button>SIGN IN</Button>      
               </div>
             </Form>
 
-            <div className="form-control w-full ">
+            <div className="w-full ">
               <span className="flex flex-row justify-normal text-xs gap-2">
-                <p>Have you not an account</p> <Link href = '/auth/signup' className="link">Sign up</Link>
+                <p>Have you not an account</p> <Link href = '/auth/signup' className="link text-[#5850EC]">Sign up</Link>
               </span>
             </div>
           </div>
