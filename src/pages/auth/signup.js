@@ -3,6 +3,8 @@ import Form from "@/components/form/form";
 import LayoutLeftImage from "../../../components/layoutLeftImage";
 import Button from "@/components/button/button";
 import Checkbox from "@/components/form/checkbox/checkbox";
+import Image from "next/image";
+import logo from "/public/images/logo-box.png";
 
 
 export default function SignUp() {
@@ -21,6 +23,13 @@ const linkTitle = 'Sign in';
       </Head>
 
       <div className="card px-10 py-20 shadow-xl min-w-[70%]">
+      <Image
+            src={logo}
+            alt="logo image"
+            priority
+            className="mb-14 mx-auto"
+            width={150}
+          />
         <div className="form ">
           <p className="text-xl mb-6">{title}</p>
           <div className="flex flex-col w-full component-preview items-center gap-4 font-roboto">
