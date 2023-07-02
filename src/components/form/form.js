@@ -21,7 +21,7 @@ export default function Form(props) {
   };
 
   return (
-    <form className="w-full" onSubmit={doSubmit}>
+    <form className="w-full space-y-4" onSubmit={doSubmit}>
       {props.fields.map((field) => {
         return (
           <FormInput

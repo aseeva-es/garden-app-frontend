@@ -1,8 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
-import pic from "/public/images/left-box.jpg";
-import Layout from "../../../components/layout";
+// import Image from "next/image";
+// import pic from "/public/images/left-box.jpg";
+// import Layout from "../../../components/layout";
 import Form from "@/components/form/form";
+import LayoutLeftImage from "../../../components/layoutLeftImage";
 
 export default function Login() {
   const doSubmit = (formValue) => {
@@ -10,25 +11,11 @@ export default function Login() {
   };
 
   return (
-    <Layout>
+    <LayoutLeftImage>
       <Head>
         <title>Login</title>
       </Head>
-
-      <div className="flex h-screen w-screen">
-        <div className="relative flex w-1/2">
-          <Image
-            src={pic}
-            alt="bacground image wth flower"
-            priority
-            style={{ objectFit: "cover" }}
-          />
-        </div>
-
-
-        <div className="relative flex items-center justify-center w-1/2 p-4">
-
-        <div className="card px-10 py-20 shadow-xl min-w-[70%]">
+      <div className="card px-10 py-20 shadow-xl min-w-[70%]">
         <div className="form ">
           <p className="text-xl mb-6">Sign in to PlantApp</p>
           <div className="flex flex-col w-full component-preview items-center gap-4 font-sans">
@@ -55,9 +42,13 @@ export default function Login() {
                 <a className="link">Forgot your password?</a>
               </div>
               <div className="form-control w-full">
-                <button className="bg-[#B58D63] text-white " type="submit">
+                <button className="
+                w-full 
+                text-white bg-[#B58D63] hover:bg-[#CCA070] focus:ring-4 focus:ring-stone-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2
+                " type="submit">
                   SIGN IN
                 </button>
+                
               </div>
             </Form>
 
@@ -69,8 +60,17 @@ export default function Login() {
           </div>
         </div>
       </div>
-        </div>
-      </div>
-    </Layout>
+    </LayoutLeftImage>
   );
 }
+
+// Login.getLayout = function getLayout(page) {
+//   return (
+//     <Layout>
+//       <Head>
+//         <title>Login</title>
+//       </Head>
+//       <LayoutLeftImage>{page}</LayoutLeftImage>
+//     </Layout>
+//   );
+// };
