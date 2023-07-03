@@ -2,22 +2,27 @@ import Head from "next/head";
 import Form from "@/components/form/form";
 import LayoutLeftImage from "../../../components/layoutLeftImage";
 import Button from "@/components/button/button";
-import Link from "next/link";
+import Checkbox from "@/components/form/checkbox/checkbox";
 import Image from "next/image";
 import logo from "/public/images/logo-box.png";
 
-export default function Login() {
+
+export default function SignUp() {
+const title = 'Sign up for PlantApp';
+const linkText = 'Have you not an account';
+const linkTitle = 'Sign in';
+
   const doSubmit = (formValue) => {
     console.warn(formValue);
   };
-const title = 'Sign in to PlantApp'
+
   return (
     <LayoutLeftImage>
       <Head>
-        <title>Login</title>
+        <title>Signup</title>
       </Head>
-      <div className="card relative px-10 py-16 shadow-xl min-w-[70%]">
-      
+
+      <div className="card px-10 py-20 shadow-xl min-w-[70%]">
       <Image
             src={logo}
             alt="logo image"
@@ -31,6 +36,13 @@ const title = 'Sign in to PlantApp'
             <Form
               onSubmit={doSubmit}
               fields={[
+                {
+                  type: "text",
+                  placeholder: "Your Full Name",
+                  name: "name",
+                  label: "Name",
+                  required: true,
+                },
                 {
                   type: "email",
                   placeholder: "Email",
@@ -47,17 +59,15 @@ const title = 'Sign in to PlantApp'
                 },
               ]}
             >
-              <div className="w-full items-end text-xs">
-                <a className="link text-[#5850EC]">Forgot your password?</a>
-              </div>
-              <div className="w-full">
-                <Button>SIGN IN</Button>      
+              <Checkbox />
+              <div className=" w-full">
+                <Button >SIGN UP</Button>
               </div>
             </Form>
 
-            <div className="w-full ">
+            <div className=" w-full ">
               <span className="flex flex-row justify-normal text-xs gap-2">
-                <p>Have you not an account</p> <Link href = '/auth/signup' className="link text-[#5850EC]">Sign up</Link>
+                <p>{linkText}</p> <a className="link text-[#5850EC]">{linkTitle}</a>
               </span>
             </div>
           </div>
@@ -66,14 +76,3 @@ const title = 'Sign in to PlantApp'
     </LayoutLeftImage>
   );
 }
-
-// Login.getLayout = function getLayout(page) {
-//   return (
-//     <Layout>
-//       <Head>
-//         <title>Login</title>
-//       </Head>
-//       <LayoutLeftImage>{page}</LayoutLeftImage>
-//     </Layout>
-//   );
-// };
