@@ -1,0 +1,28 @@
+
+
+@import "layout/header";
+@import "layout/section";
+@import "abstracts/font";
+@import "components/plantCard";
+@import "components/buttons";
+@import "modules/cardModule";
+@import "layout/landing";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+    overflow-x: hidden;
+}
+
+
+
