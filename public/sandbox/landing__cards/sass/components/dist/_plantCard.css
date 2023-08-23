@@ -1,0 +1,115 @@
+.plantCard {
+  width: 32rem;
+  height: 53rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+  background-color: #fff;
+  margin-top: 5rem;
+  transform-style: preserve-3d;
+  transition: all 0.8s;
+  cursor: pointer;
+  transform: rotateY(0deg);
+}
+.plantCard:active {
+  transform: rotateY(180deg);
+  transition: all 1s;
+}
+.plantCard__frontSide {
+  background-color: #00341A;
+  width: 100%;
+  height: 100%;
+  color: #EFEEE5;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+.plantCard__frontSide__top {
+  height: 50%;
+  width: 100%;
+}
+.plantCard__frontSide__top--img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+.plantCard__frontSide__bottom {
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+}
+.plantCard__frontSide__bottom--title {
+  display: inline-block;
+  color: #EFEEE5;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.plantCard__frontSide__bottom--table {
+  border-spacing: 1rem;
+}
+.plantCard__frontSide__bottom--table tr, .plantCard__frontSide__bottom--table td {
+  font: 1.5rem sans-serif;
+}
+.plantCard__frontSide__bottom--icon {
+  display: inline-block;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+.plantCard__frontSide__bottom--icon img {
+  width: 4rem;
+  height: 4rem;
+}
+.plantCard__backSide {
+  background-color: #00341A;
+  transform: rotateY(180deg);
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+.plantCard__backSide__content {
+  position: absolute;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  height: 100%;
+  width: 100%;
+}
+.plantCard__backSide__content--title {
+  font: 2.5rem sans-serif;
+  color: #EFEEE5;
+  text-transform: capitalize;
+}
+.plantCard__backSide__content--icon {
+  display: inline-block;
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
+}
+.plantCard__backSide__content--icon img {
+  width: 4rem;
+  height: 4rem;
+}
+.plantCard__backSide__content--text {
+  font: 1.7rem sans-serif;
+  font-weight: 500;
+  color: #EFEEE5;
+}
+.plantCard__backSide__content--btn {
+  position: absolute;
+  bottom: 3rem;
+  left: 1.5rem;
+}

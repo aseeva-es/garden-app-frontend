@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Box</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo-box">
+            <img src="img/logo-box.jpg" alt="Logo" class="header__logo">
+        </div>
+        <div class="header__nav-box">
+                <a href="#" class="header__nav-box--link">My Garden</a>
+                <a href="#" class="header__nav-box--link">Plants</a>
+                <a href="#" class="header__nav-box--link">About</a>
+                <a href="#" class="header__nav-box--link"><img src="img/user.png" alt="" srcset=""></a>
+        </div>
+    </header>
+
+    <section class="section">
+        <!-- <div class="section__features">
+            <div class="section__features--searchBox">
+                <input type="search" name="" id="" placeholder="Search your plant here🔍">
+                <a href="#" class="section__features--link">Search</a>
+            </div>
+            <div class="section__features--filterBox">
+                <select name="" id="" class="section__features--filterBox--select">
+                    <option value="">Filter</option>
+                    <option value="">Easy</option>
+                    <option value="">Medium</option>
+                    <option value="">Hard</option>
+                </select>
+        </div> -->
+        <div class="section__plantCard plantCard">
+                <div class="plantCard__frontSide">
+                    <div class="plantCard__frontSide__top">
+                        <img src="img/daisy.png" alt="Daisy" class="plantCard__frontSide__top--img">
+                    </div>
+                    <div class="plantCard__frontSide__bottom">
+                        <h1 class="plantCard__frontSide__bottom--title">Daisy</h1>
+                        <span class="plantCard__frontSide__bottom--icon"><img src="img/favourite.png" alt="info-icon" srcset=""></span>
+                        <table class="plantCard__frontSide__bottom--table">
+                            <tr>
+                                <td> <img src="img/level.png" alt="" srcset=""> </td>
+                                <td> Easy</td>
+                                <td><img src="img/ind-outd.png" alt="" srcset=""></td>
+                                <td>Indoor/Outdoor</td>
+                            </tr>
+                            <tr>
+                                <td> <img src="img/size.png" alt="" srcset=""></td>
+                                <td>Small</td>
+                                <td><img src="img/durability.png" alt="" srcset=""></td>
+                                <td>Long Term</td>
+                            </tr>
+                        </table>
+                        <div class="plantCard__buttons">
+                            <a href="#" class="plantCard__buttons--small">Add </a>
+                            <a href="#" class="plantCard__buttons--small">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="plantCard__backSide">
+                    <div class="plantCard__backSide__content">
+                        <span class="plantCard__backSide__content--icon" onclick=""><img src="img/rotate.png" alt="" srcset=""></span>
+                        <h1 class="plantCard__backSide__content--title">Bellis perennis</h1>
+                        <p class="plantCard__backSide__content--text"> Bellis perennis,the daisy, is a European species of the family Asteraceae, often considered the archetypal species of the name daisy. To distinguish this species from other plants known as daisies, it is sometimes qualified as common daisy, lawn daisy or English daisy.
+                        <h1 class="plantCard__backSide__content--title">Tips</h1>
+                        <p class="plantCard__backSide__content--text">
+                        Daisies prefer rich fast-draining soil, plenty of water, and ample sunshine. Healthy soil means healthy roots for your daisies, so it's best to put the time in to amend the soil in your garden before planting. <a href="" style="text-decoration: underline; color: antiquewhite; font-size: 1.6rem;">more...</a></p>
+                           
+                        <a href="#" class="plantCard__buttons--big plantCard__backSide__content--btn">Add to My Garden</a>
+                        
+                    </div>
+                </div>
+              </div>
+        </div>
+        <div class="section__plantCard plantCard plantCard__module">
+            <div class="plantCard__frontSide">
+                <div class="plantCard__frontSide__top">
+                    <img src="img/roses.png" alt="Daisy" class="plantCard__frontSide__top--img">
+                </div>
+                <div class="plantCard__frontSide__bottom">
+                    <h1 class="plantCard__frontSide__bottom--title">Rose</h1>
+                    <span class="plantCard__frontSide__bottom--icon alfa"><img src="img/favourite.png" alt="info-icon" srcset="" class="plantCard__module--icon"></span>
+                    <table class="plantCard__frontSide__bottom--table">
+                        <tr>
+                            <td> <img src="img/level.png" alt="" srcset=""> </td>
+                            <td> Easy</td>
+                            <td><img src="img/ind-outd.png" alt="" srcset=""></td>
+                            <td>Indoor/Outdoor</td>
+                        </tr>
+                        <tr>
+                            <td> <img src="img/size.png" alt="" srcset=""></td>
+                            <td>Small</td>
+                            <td><img src="img/durability.png" alt="" srcset=""></td>
+                            <td>Long Term</td>
+                        </tr>
+                    </table>
+                    <div class="plantCard__buttons">
+                        <a href="#" class="plantCard__buttons--small">Add </a>
+                        <button class="plantCard__buttons--small" onclick="openModal()">More</button>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            <div class="modal" id="modal">
+                <div class="modal-content">
+                  <button class="close-button" onclick="closeModal()"></button>
+                </div>
+              </div>
+        </div>
+        <div class="section__plantCard plantCard"><SPAn>TEST</SPAn></div>
+        <div class="section__plantCard plantCard"><SPAn>TEST</SPAn></div>
+        <div class="section__plantCard plantCard"><SPAn>TEST</SPAn></div>
+        <div class="section__plantCard plantCard"><SPAn>TEST</SPAn></div>
+        <div class="section__plantCard plantCard"><SPAn>TEST</SPAn></div>
+        <div class="section__plantCard plantCard"><SPAn>TEST</SPAn></div>
+        <div class="section__plantCard plantCard"><SPAn>TEST</SPAn></div>
+        <div class="section__plantCard plantCard"><SPAn>TEST</SPAn></div>
+        <div class="section__plantCard plantCard"><SPAn>TEST</SPAn></div>
+        <div class="section__plantCard plantCard"><SPAn>TEST</SPAn></div>
+        <div class="section__plantCard plantCard"><SPAn>TEST</SPAn></div>
+        <div class="section__plantCard plantCard"><SPAn>TEST</SPAn></div>
+        <div class="section__plantCard plantCard"><SPAn>TEST</SPAn></div>
+        <div class="section__plantCard plantCard"><SPAn>TEST</SPAn></div>    
+    </section>
+
+
+
+
+
+
+    <script>
+function openModal() {
+var modal = document.getElementById('modal');
+  modal.style.display = 'grid';
+}
+
+function closeModal() {
+  var modal = document.getElementById('modal');
+  modal.style.display = 'none';
+}
+    </script>
+</body>
+</html>

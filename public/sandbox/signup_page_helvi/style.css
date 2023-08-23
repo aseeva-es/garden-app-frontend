@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+}
+
+/* Left Side */
+
+.container__left {
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+}
+
+.container__left--img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Right Side */
+
+.container__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    flex-direction: column;
+    /* display: grid;
+    place-items: center; */
+}
+
+.container__right__card {
+    width: 50rem;
+    height: 60rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0.4rem;
+    background: #FFF;
+    box-shadow: 0px 1px 2px 0px rgba(63, 63, 68, 0.15), 0px 0px 0px 0px rgba(63, 63, 68, 0.05);
+    position: relative;
+    gap: 2rem;
+}
+
+.container__right__card--logo {
+    position: absolute;
+    top: 0;
+}
+
+.container__right__card--title {
+    color: #263238;
+    font-size: 2.4rem;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.8rem;
+    letter-spacing: -0.006rem;
+    align-self: flex-start;
+    margin-left: 3.4rem;
+}
+
+input:not([type="checkbox"]) {
+    width: 43.2rem;
+    height: 5.6rem;
+    flex-shrink: 0;
+}
+
+input::placeholder {
+    color: #333;
+    font-size: 1.5rem;
+    opacity: .3;
+    padding-left: 2.4rem;
+}
+
+.button {
+    display: flex;
+    width: 43.2rem;
+    height: 5.6rem;
+    padding: 0.8rem 2.2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-shrink: 0;
+    border-radius: 0.4rem;
+    background: #B58D63;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+    cursor: pointer;
+}
+
+.button a {
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.6rem;
+    letter-spacing: 0.03rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.container__right__card--link {
+    color: #263238;
+    font-size: 1.6rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.4rem;
+    letter-spacing: 0.01rem;
+    align-self: flex-start;
+    margin-left: 3.4rem;
+}
+
+
+.container__right__card--title a {
+    color: #5850EC;
+    font-size: 1.6rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.4rem;
+    letter-spacing: 0.01rem;
+    text-decoration-line: underline;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 3.4rem;
+    align-self: flex-start;
+    color: #263238;
+    font-size: 1.6rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.4rem;
+    letter-spacing: 0.01rem;
+}
+
+/* Pseudo Classes Start here */
+.name {
+    position: relative;
+}
+
+
+.name::before {
+    content: "Name";
+    position: absolute;
+    background-color: #FFF;
+    width: 5rem;
+    font-size: 1.2rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2rem;
+    letter-spacing: 0.04rem;
+    color: #263238;
+    margin-left: 2rem;
+    bottom: 5rem;
+    text-align: center;
+}
+
+.email {
+    position: relative;
+}
+
+.email::before {
+    content: "Email";
+    position: absolute;
+    background-color: #FFF;
+    width: 5rem;
+    font-size: 1.2rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2rem;
+    letter-spacing: 0.04rem;
+    color: #263238;
+    margin-left: 2rem;
+    bottom: 5rem;
+    text-align: center;
+}
+
+.password {
+    position: relative;
+}
+
+.password::before {
+    content: "Password";
+    position: absolute;
+    background-color: #FFF;
+    width: 8rem;
+    font-size: 1.2rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2rem;
+    letter-spacing: 0.04rem;
+    color: #263238;
+    margin-left: 2rem;
+    bottom: 5rem;
+    text-align: center;
+}

@@ -1,0 +1,58 @@
+.plantCard__module{
+        width: 32rem;
+        
+        position: relative;
+        height: 53rem;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        border-radius: 1rem;
+        background-color: #fff;
+        margin-top: 5rem;
+        cursor: pointer;
+        transform:rotateY(0deg) ;
+        &:active{
+            transform: rotateY(00deg);
+            transition: all 1s;
+        }
+        &--icon{
+            transform: rotate(-45deg);
+            position: absolute;
+            top: 1rem;
+            right: -2rem;
+            
+        }
+
+        // .modal {
+        //     display: none;
+        //     position: fixed;
+        //     top: 50%;
+        //     left: 50%;
+        //     transform: translate(-35%, -10%);
+        //     top: 0;
+        //     width: 1200px;
+        //     height:800px;
+        //     background-color: rgba(0, 0, 0, 0.5);
+        //     justify-content: center;
+        //     align-items: center;
+        //     z-index: 99;
+        //   }
+          
+        //   .modal-content {
+        //     background-color: white;
+        //     width:1200px;
+        //     height: 800px;
+        //     padding: 20px;
+        //     border-radius: 5px;
+        //     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+        //     z-index: 1000;
+        //   }
+          
+        //   .close-button {
+        //     position: absolute;
+        //     width: 30px;
+        //     height: 30px;
+        //     right: 10px;
+        //     display: inline-block;
+        // }
+          
+}
+

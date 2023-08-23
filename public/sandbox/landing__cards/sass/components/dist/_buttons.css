@@ -1,0 +1,32 @@
+.plantCard__buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+.plantCard__buttons--small {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  width: 49%;
+  height: 5rem;
+  font-size: 2.5rem;
+  font-style: normal;
+  background-color: #EFEEE5;
+  text-align: center;
+  text-decoration: none;
+  color: #00341A;
+}
+.plantCard__buttons--big {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  width: 90%;
+  height: 5rem;
+  font-size: 2.5rem;
+  font-style: normal;
+  background-color: #EFEEE5;
+  text-align: center;
+  text-decoration: none;
+  color: #00341A;
+}
